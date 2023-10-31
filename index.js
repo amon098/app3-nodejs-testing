@@ -9,7 +9,8 @@ const PORT = process.env.PORT || 4001;
 
 
 app.get('/', (req, res) => {
-	res.sendFile(path.join( __dirname + '/app/public/index.html'));
+    res.sendFile(path.join( __dirname + '/public/index.html'));
+	// res.sendFile(path.join( __dirname + '/app/public/index.html'));
     //__dirname : It will resolve to your project folder.
 })
 
